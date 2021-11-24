@@ -6,5 +6,7 @@ rm -r DesktopGoose
 wget https://raw.githubusercontent.com/Helyosis/rigolo/main/DesktopGoose.zip
 unzip DesktopGoose.zip
 wine DesktopGoose/GooseDesktop.exe &
-sleep 25
+sleep 5
+xdotool key Return
+sleep 2
 xdotool key Super_L+f
