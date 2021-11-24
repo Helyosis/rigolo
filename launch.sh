@@ -1,6 +1,9 @@
 nix profile install nixpkgs#wine
+nix profile install nixpkgs#xdotools
 cd /tmp
 rm DesktopGoose.zip
-wget https://github.com/Helyosis/rigolo/raw/main/DesktopGoose.zip
+wget https://raw.githubusercontent.com/Helyosis/rigolo/main/DesktopGoose.zip
 unzip DesktopGoose.zip
 wine DesktopGoose/GooseDesktop.exe &
+sleep 25
+xdotool key Super_L+f
